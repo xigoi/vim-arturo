@@ -25,7 +25,6 @@ syntax keyword arturoLibReflection attr attr? attribute? attributeLabel? attrs b
 syntax keyword arturoLibStrings capitalize color join levenshtein lower lower?  match numeric?  pad prefix prefix?  render replace strip suffix suffix?  upper upper?  whitespace?
 syntax keyword arturoLibSystem execute exit list panic pause
 syntax keyword arturoLibUi webview
-
 " }}}
 
 " Syntax {{{
