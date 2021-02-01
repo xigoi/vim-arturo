@@ -43,6 +43,8 @@ syntax match arturoAttributeDelimiter '\v\.'
 syntax match arturoSyntacticSugar '\v\-\>|\=\>|\|'
 " }}}
 
+syntax match arturoLibNumbersAlias '\v\.\.'
+
 " Highlight links {{{
 highlight link arturoComment Comment
 highlight link arturoNull Constant
@@ -73,6 +75,7 @@ highlight link arturoLibIterators Function
 highlight link arturoLibLogic Operator
 highlight link arturoLibNet Function
 highlight link arturoLibNumbers Operator
+highlight link arturoLibNumbersAlias Operator
 highlight link arturoLibPath Function
 highlight link arturoLibReflection Keyword
 highlight link arturoLibStrings Function
