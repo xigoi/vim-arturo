@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.art setfiletype arturo
+autocmd BufNewFile,BufRead *.art set filetype=arturo
