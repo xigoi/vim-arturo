@@ -37,7 +37,7 @@ syntax match arturoType '\v:[A-Za-z?]+'
 syntax match arturoChar '\v`\\?.`'
 syntax region arturoString start='\v"' skip='\v\\.' end='\v"'
 syntax match arturoString '\v» .*$'
-syntax match arturoLiteral "\v\'[A-Za-z?]"
+syntax match arturoLiteral "\v\'[A-Za-z?]+"
 syntax match arturoPathDelimiter '\v\\'
 syntax match arturoAttributeDelimiter '\v\.'
 syntax match arturoSyntacticSugar '\v\-\>|\=\>|\|'
