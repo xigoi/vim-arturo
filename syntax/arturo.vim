@@ -35,12 +35,15 @@ syntax match arturoInteger '\v\d+'
 syntax match arturoFloating '\v\d+\.\d+'
 syntax match arturoType '\v:[A-Za-z?]+'
 syntax match arturoChar '\v`\\?.`'
-syntax region arturoString start='\v"' skip='\v\\.' end='\v"'
-syntax match arturoString '\v» .*$'
+syntax region arturoString start='\v"' skip='\v\\.' end='\v"' contains=arturoStringInterpolation
+syntax match arturoString '\v» .*$' contains=arturoStringInterpolation
+syntax region arturoRawString start='\v\{' end='\v\}' contains=arturoRawString,arturoStringInterpolation
+syntax match arturoStringInterpolation '\v\|[^|]+\|' contained
 syntax match arturoLiteral "\v\'[A-Za-z?]+"
 syntax match arturoPathDelimiter '\v\\'
 syntax match arturoAttributeDelimiter '\v\.'
 syntax match arturoSyntacticSugar '\v\-\>|\=\>|\|'
+syntax match arturoAssignment '\v[A-Za-z?]+\:'
 " }}}
 
 syntax match arturoLibNumbersAlias '\v\.\.'
@@ -54,10 +57,13 @@ highlight link arturoFloating Float
 highlight link arturoType Type
 highlight link arturoChar Character
 highlight link arturoString String
+highlight link arturoRawString String
+highlight link arturoStringInterpolation Special
 highlight link arturoLiteral Special
 highlight link arturoPathDelimiter Delimiter
 highlight link arturoSyntacticSugar Keyword
 highlight link arturoAttributeDelimiter Delimiter
+highlight link arturoAssignment Statement
 highlight link arturoLibArithmetic Operator
 highlight link arturoLibArithmeticAlias Operator
 highlight link arturoLibBinary Operator
