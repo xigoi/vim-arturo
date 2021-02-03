@@ -35,7 +35,7 @@ syntax match arturoInteger '\v\d+'
 syntax match arturoFloating '\v\d+\.\d+'
 syntax match arturoType '\v:[A-Za-z?]+'
 syntax match arturoChar '\v`\\?.`'
-syntax region arturoString start='\v"' skip='\v\\.' end='\v"' contains=arturoStringInterpolation
+syntax region arturoString start='\v\"' skip='\v\\.' end='\v\"|$' contains=arturoStringInterpolation
 syntax match arturoString '\v» .*$' contains=arturoStringInterpolation
 syntax region arturoRawString start='\v\{' end='\v\}' contains=arturoRawString,arturoStringInterpolation
 syntax match arturoStringInterpolation '\v\|[^|]+\|' contained
