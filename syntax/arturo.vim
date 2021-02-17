@@ -22,7 +22,7 @@ syntax keyword arturoLibLogic all? and? any? false? nand? nor? not? or? true? xn
 syntax keyword arturoLibNet download mail serve
 syntax keyword arturoLibNumbers abs acos acosh asin asinh atan atanh average ceil cos cosh csec csech ctan ctanh even? exp factors floor gamma gcd ln log median negative? odd? positive? prime? product random range round sec sech sin sinh sqrt sum tan tanh zero?
 syntax keyword arturoLibPath extract module relative
-syntax keyword arturoLibReflection attr attr? attribute? attributeLabel? attrs benchmark binary? block? boolean? char? database? date? dictionary? help info inline? inspect integer? is? floating? function? label? literal? null? path? pathLabel? set? stack standalone? string? symbol? symbols type type? word?
+syntax keyword arturoLibReflection arity attr attr? attribute? attributeLabel? attrs benchmark binary? block? boolean? char? database? date? dictionary? help info inline? inspect integer? is? floating? function? label? literal? null? path? pathLabel? set? stack standalone? string? symbol? symbols type type? word?
 syntax keyword arturoLibSets difference intersection subset? superset? union
 syntax keyword arturoLibStrings ascii? capitalize color join levenshtein lower lower? match numeric? pad prefix prefix? render replace strip suffix suffix? upper upper? whitespace?
 syntax match arturoLibStringsAlias '\v\~'
