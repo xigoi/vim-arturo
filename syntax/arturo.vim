@@ -24,7 +24,7 @@ syntax keyword arturoLibNumbers abs acos acosh asin asinh atan atanh average cos
 syntax keyword arturoLibPath extract module relative
 syntax keyword arturoLibReflection attr attr? attribute? attributeLabel? attrs benchmark binary? block? boolean? char? database? date? dictionary? help info inline? inspect integer? is? floating? function? label? literal? null? path? pathLabel? set? stack standalone? string? symbol? symbols type type? word?
 syntax keyword arturoLibSets difference intersection subset? superset? union
-syntax keyword arturoLibStrings capitalize color join levenshtein lower lower? match numeric? pad prefix prefix? render replace strip suffix suffix? upper upper? whitespace?
+syntax keyword arturoLibStrings ascii? capitalize color join levenshtein lower lower? match numeric? pad prefix prefix? render replace strip suffix suffix? upper upper? whitespace?
 syntax match arturoLibStringsAlias '\v\~'
 syntax keyword arturoLibSystem execute exit list panic pause
 syntax keyword arturoLibUi webview
