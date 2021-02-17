@@ -17,8 +17,8 @@ syntax keyword arturoLibDatabase close query open
 syntax keyword arturoLibDates now
 syntax keyword arturoLibFiles exists? read unzip write zip
 syntax keyword arturoLibIo clear input print prints
-syntax keyword arturoLibIterators all? any? filter fold loop map select
-syntax keyword arturoLibLogic and? false? nand? nor? not? or? true? xnor?
+syntax keyword arturoLibIterators every? filter fold loop map select some? 
+syntax keyword arturoLibLogic all? and? any? false? nand? nor? not? or? true? xnor? 
 syntax keyword arturoLibNet download mail serve
 syntax keyword arturoLibNumbers abs acos acosh asin asinh atan atanh average ceil cos cosh csec csech ctan ctanh even? exp factors floor gamma gcd ln log median negative? odd? positive? prime? product random range round sec sech sin sinh sqrt sum tan tanh zero?
 syntax keyword arturoLibPath extract module relative
