@@ -20,7 +20,7 @@ syntax keyword arturoLibIo clear input print prints
 syntax keyword arturoLibIterators all? any? filter fold loop map select
 syntax keyword arturoLibLogic and? false? nand? nor? not? or? true? xnor?
 syntax keyword arturoLibNet download mail serve
-syntax keyword arturoLibNumbers abs acos acosh asin asinh atan atanh average cos cosh csec csech ctan ctanh even? factors gcd median negative? odd? positive? prime? product random range sec sech sin sinh sqrt sum tan tanh zero?
+syntax keyword arturoLibNumbers abs acos acosh asin asinh atan atanh average ceil cos cosh csec csech ctan ctanh even? exp factors floor gamma gcd ln log median negative? odd? positive? prime? product random range round sec sech sin sinh sqrt sum tan tanh zero?
 syntax keyword arturoLibPath extract module relative
 syntax keyword arturoLibReflection attr attr? attribute? attributeLabel? attrs benchmark binary? block? boolean? char? database? date? dictionary? help info inline? inspect integer? is? floating? function? label? literal? null? path? pathLabel? set? stack standalone? string? symbol? symbols type type? word?
 syntax keyword arturoLibSets difference intersection subset? superset? union
