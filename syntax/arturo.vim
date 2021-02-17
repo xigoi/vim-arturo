@@ -6,6 +6,7 @@ endif
 syntax keyword arturoLibArithmetic add dec div fdiv inc mod mul neg pow sub
 syntax match arturoLibArithmeticAlias '\v\+|\/|\%|\*|\^|\-'
 syntax keyword arturoLibBinary and nand nor not or shl shr xnor xor
+syntax keyword arturoLibCollections append chop combine contains? drop empty empty? extend first flatten get in? index insert key? keys last max min permutate remove repeat reverse sample set shuffle size slice sort split take unique values
 syntax keyword arturoLibComparison equal? greater? greaterOrEqual? less? lessOrEqual? notEqual?
 syntax match arturoLibComparisonAlias '\v\>\=|\=\<|\<\>|\=|\>|\<'
 syntax keyword arturoLibConverters array as dictionary function to
