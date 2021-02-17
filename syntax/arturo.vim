@@ -26,7 +26,7 @@ syntax keyword arturoLibReflection arity attr attr? attribute? attributeLabel? a
 syntax keyword arturoLibSets difference intersection subset? superset? union
 syntax keyword arturoLibStrings ascii? capitalize color join levenshtein lower lower? match numeric? pad prefix prefix? render replace strip suffix suffix? upper upper? whitespace?
 syntax match arturoLibStringsAlias '\v\~'
-syntax keyword arturoLibSystem execute exit list panic pause
+syntax keyword arturoLibSystem ensure execute exit list panic pause
 syntax keyword arturoLibUi webview
 " }}}
 
