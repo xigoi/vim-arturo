@@ -6,6 +6,7 @@ endif
 syntax keyword arturoLibArithmetic add dec div fdiv inc mod mul neg pow sub
 syntax match arturoLibArithmeticAlias '\v\+|\/|\%|\*|\^|\-'
 syntax keyword arturoLibBinary and nand nor not or shl shr xnor xor
+syntax keyword arturoLibCollections append chop combine contains? drop empty empty? extend first flatten get in? index insert key? keys last max min permutate remove repeat reverse sample set shuffle size slice sort split take unique values
 syntax keyword arturoLibComparison equal? greater? greaterOrEqual? less? lessOrEqual? notEqual?
 syntax match arturoLibComparisonAlias '\v\>\=|\=\<|\<\>|\=|\>|\<'
 syntax keyword arturoLibConverters array as dictionary function to
@@ -16,15 +17,16 @@ syntax keyword arturoLibDatabase close query open
 syntax keyword arturoLibDates now
 syntax keyword arturoLibFiles exists? read unzip write zip
 syntax keyword arturoLibIo clear input print prints
-syntax keyword arturoLibIterators all? any? filter fold loop map select
-syntax keyword arturoLibLogic and? false? nand? nor? not? or? true? xnor?
+syntax keyword arturoLibIterators every? filter fold loop map select some? 
+syntax keyword arturoLibLogic all? and? any? false? nand? nor? not? or? true? xnor? 
 syntax keyword arturoLibNet download mail serve
-syntax keyword arturoLibNumbers abs acos acosh asin asinh atan atanh average cos cosh csec csech ctan ctanh even? factors gcd median negative? odd? positive? prime? product random range sec sech sin sinh sqrt sum tan tanh zero?
+syntax keyword arturoLibNumbers abs acos acosh asin asinh atan atanh average ceil cos cosh csec csech ctan ctanh even? exp factors floor gamma gcd ln log median negative? odd? positive? prime? product random range round sec sech sin sinh sqrt sum tan tanh zero?
 syntax keyword arturoLibPath extract module relative
-syntax keyword arturoLibReflection attr attr? attribute? attributeLabel? attrs benchmark binary? block? boolean? char? database? date? dictionary? help info inline? inspect integer? is? floating? function? label? literal? null? path? pathLabel? set? stack standalone? string? symbol? symbols type type? word?
-syntax keyword arturoLibStrings capitalize color join levenshtein lower lower? match numeric? pad prefix prefix? render replace strip suffix suffix? upper upper? whitespace?
+syntax keyword arturoLibReflection arity attr attr? attribute? attributeLabel? attrs benchmark binary? block? boolean? char? database? date? dictionary? help info inline? inspect integer? is? floating? function? label? literal? null? path? pathLabel? set? stack standalone? string? symbol? symbols type type? word?
+syntax keyword arturoLibSets difference intersection subset? superset? union
+syntax keyword arturoLibStrings ascii? capitalize color join levenshtein lower lower? match numeric? pad prefix prefix? render replace strip suffix suffix? upper upper? whitespace?
 syntax match arturoLibStringsAlias '\v\~'
-syntax keyword arturoLibSystem execute exit list panic pause
+syntax keyword arturoLibSystem ensure execute exit list panic pause
 syntax keyword arturoLibUi webview
 " }}}
 
